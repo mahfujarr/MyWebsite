@@ -12,7 +12,7 @@
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                             <!-- Project Card 1-->
                             <a href="https://github.com/mahfujarr/LMS" class="text-decoration-none" target = "_blank">
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s, box-shadow 0.3s;">
                                     <div class="card-body p-0">
                                         <div class="d-flex align-items-center">
                                             <div class="p-5">
@@ -26,7 +26,9 @@
                             </a>
                             <style>
                                 .card:hover {
-                                    transform: translateY(-10px);
+                                    {% comment %} transform: translateY(-10px); {% endcomment %}
+                                    transform: translateX(-20px);
+                                    box-shadow: 0 10px 20px rgba(248, 71, 245, 0.58);
                                 }
                             </style>
                             <!-- Project Card 2-->
@@ -39,6 +41,20 @@
                                                 <p>I have been tasked to build a personal finance tracker as a class project. More details can be found in my github profile.</p>
                                             </div>
                                             <img class="img-fluid" src="{% static 'Home/Projects/PFT.png' %}" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Project Card 2-->
+                            <a href="https://github.com/mahfujarr/ADBloop" class="text-decoration-none" target="_blank">
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">ADB Loop</h2>
+                                                <p>I often change my phone's custom ROM and the problem is that I need to manually restrict many of the apps from running in the background. This python script makes it automatic.</p>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'Home/Projects/ADB.png' %}" alt="..." />
                                         </div>
                                     </div>
                                 </div>
