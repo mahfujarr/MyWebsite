@@ -1,13 +1,6 @@
-Home/__pycache__/__init__.cpython-313.pyc
-Home/__pycache__/admin.cpython-313.pyc
-Home/__pycache__/apps.cpython-313.pyc
-Home/__pycache__/models.cpython-313.pyc
-Home/__pycache__/urls.cpython-313.pyc
-Home/__pycache__/views.cpython-313.pyc
-Home/migrations/__pycache__/__init__.cpython-313.pyc
-Home/migrations/__pycache__/0001_initial.cpython-313.pyc
-Home/migrations/__pycache__/0002_alter_contact_message.cpython-313.pyc
-Site/__pycache__/__init__.cpython-313.pyc
-Site/__pycache__/settings.cpython-313.pyc
-Site/__pycache__/urls.cpython-313.pyc
-Site/__pycache__/wsgi.cpython-313.pyc
+# Ignore compiled Python bytecode files
+**/__pycache__/
+**/*.py[cod]
+
+# Ignore migration files
+Home/migrations/
