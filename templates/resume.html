@@ -2,6 +2,17 @@
 {% load static %}
 {% block title %}Resume{% endblock title %}
 {% block body %}
+{% comment %} <style>
+    .btn:hover {
+        transform: scale(1.1);
+    }
+    .col {
+        transition: transform 0.3s;
+        }
+    .col:hover {
+        transform: scale(1.1);
+        }
+</style> {% endcomment %}
 <!-- Page Content-->
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
@@ -15,10 +26,11 @@
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="{% static '/Home/assets/Mahfujar.pdf' %}" download="Mahfujar.pdf">
+                                <a class="text-gradient btn btn-outline-dark px-5 py-3 fs-6 fw-bolder" href="{% static '/Home/assets/Mahfujar.pdf' %}" download="Mahfujar.pdf" style="transition: transform 0.3s;">
                                     <div class="d-inline-block bi bi-download me-2"></div>
                                     Download Resume
                                 </a>
+                                
                             </div>
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">

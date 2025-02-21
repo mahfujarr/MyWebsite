@@ -3,91 +3,126 @@
 {% block title %}Projects{% endblock title %}
 {% block body %}
 <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <a href="https://github.com/mahfujarr/LMS" class="text-decoration-none" target = "_blank">
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s, box-shadow 0.3s;">
-                                    <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h2 class="fw-bolder">Library Management System in C++</h2>
-                                                <p>I have been tasked to build a library management system as a class project. More details can be found in my github profile.</p>
-                                            </div>
-                                            <img class="img-fluid" src="{% static 'Home/Projects/LMS.png' %}" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <style>
-                                .card:hover {
-                                    {% comment %} transform: translateY(-10px); {% endcomment %}
-                                    transform: translateX(-20px);
-                                    box-shadow: 0 10px 20px rgba(248, 71, 245, 0.58);
-                                }
-                            </style>
-                            <!-- Project Card 2-->
-                            <a href="https://github.com/mahfujarr/Personal-Finance-Tracker" class="text-decoration-none" target="_blank">
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
-                                    <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h2 class="fw-bolder">Personal Finance Tracker in C++</h2>
-                                                <p>I have been tasked to build a personal finance tracker as a class project. More details can be found in my github profile.</p>
-                                            </div>
-                                            <img class="img-fluid" src="{% static 'Home/Projects/PFT.png' %}" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Project Card 2-->
-                            <a href="https://github.com/mahfujarr/ADBloop" class="text-decoration-none" target="_blank">
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
-                                    <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h2 class="fw-bolder">ADB Loop</h2>
-                                                <p>I often change my phone's custom ROM and the problem is that I need to manually restrict many of the apps from running in the background. This python script makes it automatic.</p>
-                                            </div>
-                                            <img class="img-fluid" src="{% static 'Home/Projects/ADB.png' %}" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Project Card 2-->
-                            {% comment %} <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div> {% endcomment %}
-                        </div>
-                    </div>
+<section class="py-5">
+  <div class="container px-5 mb-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">Projects</span>
+      </h1>
+    </div>
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-11 col-xl-9 col-xxl-8">
+        <!-- Project Card 1-->
+        <a
+          href="https://github.com/mahfujarr/LMS"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <div
+            class="card overflow-hidden shadow rounded-4 border-0 mb-5"
+            style="transition: transform 0.3s"
+          >
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">Library Management System in C++</h2>
+                  <p>
+                    I have been tasked to build a library management system as a
+                    class project. More details can be found in my github
+                    profile.
+                  </p>
                 </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="/contact">Contact me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+                <img
+                  class="img-fluid"
+                  src="{% static 'Home/Projects/LMS.png' %}"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </a>
         
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'Home/js/scripts.js' %}"></script>
+        <!-- Project Card 2-->
+        <a
+          href="https://github.com/mahfujarr/Personal-Finance-Tracker"
+          class="text-decoration-none"
+          target="_blank"
+        >
+          <div
+            class="card overflow-hidden shadow rounded-4 border-0 mb-5"
+            style="transition: transform 0.3s"
+          >
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">Personal Finance Tracker in C++</h2>
+                  <p>
+                    I have been tasked to build a personal finance tracker as a
+                    class project. More details can be found in my github
+                    profile.
+                  </p>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="{% static 'Home/Projects/PFT.png' %}"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Project Card 3-->
+        <a href="https://github.com/mahfujarr/ADBloop" class="text-decoration-none" target="_blank">
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
+              <div class="card-body p-0">
+                  <div class="d-flex align-items-center">
+                      <div class="p-5">
+                          <h2 class="fw-bolder">ADB Loop</h2>
+                          <p>I often change my phone's custom ROM and the problem is that I need to manually restrict many of the apps from running in the background. This python script makes it automatic.</p>
+                      </div>
+                      <img class="img-fluid" src="{% static 'Home/Projects/ADB.png' %}" alt="..." />
+                  </div>
+              </div>
+          </div>
+      </a>
+        <!-- Project Card 2-->
+        {% comment %}
+        <div class="card overflow-hidden shadow rounded-4 border-0">
+          <div class="card-body p-0">
+            <div class="d-flex align-items-center">
+              <div class="p-5">
+                <h2 class="fw-bolder">Project Name 2</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  at enim eum illum aperiam placeat esse? Mollitia omnis minima
+                  saepe recusandae libero, iste ad asperiores! Explicabo commodi
+                  quo itaque! Ipsam!
+                </p>
+              </div>
+              <img
+                class="img-fluid"
+                src="https://dummyimage.com/300x400/343a40/6c757d"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to action section-->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+  <div class="container px-5 my-5">
+    <div class="text-center">
+      <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+      <a
+        class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+        href="/contact"
+        >Contact me</a
+      >
+    </div>
+  </div>
+</section>
 {% endblock body %}

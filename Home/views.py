@@ -22,12 +22,6 @@ def contact(request):
         contact = Contact(name=name, email=email, phone=phone, message=message, date=date)
         contact.save()
         messages.success(request, 'Your message has been sent successfully!')
-    
-    # if contact.is_valid():
-        # name = contact.cleaned_data['name']
-        # email = contact.cleaned_data['email']
-        # phone = contact.cleaned_data['phone']
-        # message = contact.cleaned_data['message']
 
         html = render_to_string('emails/contact.html', {'name': name, 'email': email, 'phone': phone, 'message': message})
         send_mail(

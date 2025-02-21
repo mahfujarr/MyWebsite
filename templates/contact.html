@@ -65,7 +65,7 @@
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                             </div>
                         </div>
-                        <!-- Submit success message-->
+                        {% comment %} <!-- Submit success message-->
                         <!---->
                         <!-- This is what your users will see when the form-->
                         <!-- has successfully submitted-->
@@ -84,10 +84,11 @@
                         <!-- an error submitting the form-->
                         <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
+                        </div> {% endcomment %}
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-lg enabled" id="submitButton"
-                                type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg enabled" id="submitButton" type="submit" onclick="this.disabled=true; this.form.submit();">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -108,7 +109,7 @@
                         Knock me on my social media
                     </p>
                     <div class="d-flex justify-content-center fs-2 gap-4">
-                        <a class="text-gradient" href="https:facebook.com/mahfujarr" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a class="text-gradient" href="https://facebook.com/mahfujarr" target="_blank"><i class="bi bi-facebook"></i></a>
                         <a class="text-gradient" href="https://wa.me/+8801887853463" target="_blank"><i class="bi bi-whatsapp"></i></a>
                         <a class="text-gradient" href="https://www.instagram.com/mah.fujar" target="_blank"><i class="bi bi-instagram"></i></a>
                     </div>

@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-3$g@f$1lu58$hqgw!$0bswqdbm#%bdu!pzu!9lp)=t2wr@=tx1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.100',]
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -129,6 +129,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+# STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]  # For development
+STATIC_ROOT = BASE_DIR / "staticfiles"  # Required for collectstatic
+
 
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # Looking to send emails in production? Check out our Email API/SMTP product!
