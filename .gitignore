@@ -4,3 +4,4 @@
 
 # Ignore migration files
 Home/migrations/
+db.sqlite3

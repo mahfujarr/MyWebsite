@@ -1,0 +1,80 @@
+.btn {
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.col {
+  transition: transform 0.3s;
+}
+
+.col:hover {
+  transform: scale(1.1);
+  color: rgb(157, 38, 255);
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  color: transparent;
+  background: linear-gradient(to right, #3a34fb, #c227f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.icon-zoom {
+  transition: transform 0.3s;
+}
+
+.icon-zoom:hover {
+  transform: scale(1.3);
+}
+
+.custom-btn {
+  background: linear-gradient(
+    45deg,
+    rgb(87, 18, 235) 0%,
+    rgb(255, 58, 248) 100%
+  );
+  color: transparent;
+  border: none;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(
+    45deg,
+    rgb(87, 18, 235) 0%,
+    rgb(255, 58, 248) 100%
+  );
+  color: white;
+  transform: scale(1);
+}
+
+.custom-link {
+  color: rgb(50, 53, 202);
+}
+
+.custom-link:hover {
+  color: rgb(157, 38, 255);
+}
+
+.project-card {
+  cursor: pointer;
+}

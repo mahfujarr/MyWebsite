@@ -2,6 +2,10 @@
 {% load static %}
 {% block title %}Projects{% endblock title %}
 {% block body %}
+<style>
+
+  
+</style>
 <!-- Projects Section-->
 <section class="py-5">
   <div class="container px-5 mb-5">
@@ -13,15 +17,8 @@
     <div class="row gx-5 justify-content-center">
       <div class="col-lg-11 col-xl-9 col-xxl-8">
         <!-- Project Card 1-->
-        <a
-          href="https://github.com/mahfujarr/LMS"
-          class="text-decoration-none"
-          target="_blank"
-        >
-          <div
-            class="card overflow-hidden shadow rounded-4 border-0 mb-5"
-            style="transition: transform 0.3s"
-          >
+        <a href="https://github.com/mahfujarr/LMS" class="text-decoration-none custom-link" target="_blank">
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" style="transition: transform 0.3s">
             <div class="card-body p-0">
               <div class="d-flex align-items-center">
                 <div class="p-5">
@@ -32,26 +29,17 @@
                     profile.
                   </p>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="{% static 'Home/Projects/LMS.png' %}"
-                  alt="..."
-                />
+                <img class="img-fluid" src="{% static 'Home/Projects/LMS.png' %}" alt="..." />
               </div>
             </div>
           </div>
+
         </a>
-        
+
         <!-- Project Card 2-->
-        <a
-          href="https://github.com/mahfujarr/Personal-Finance-Tracker"
-          class="text-decoration-none"
-          target="_blank"
-        >
-          <div
-            class="card overflow-hidden shadow rounded-4 border-0 mb-5"
-            style="transition: transform 0.3s"
-          >
+        <a href="https://github.com/mahfujarr/Personal-Finance-Tracker" class="text-decoration-none custom-link"
+          target="_blank">
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" style="transition: transform 0.3s">
             <div class="card-body p-0">
               <div class="d-flex align-items-center">
                 <div class="p-5">
@@ -62,29 +50,26 @@
                     profile.
                   </p>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="{% static 'Home/Projects/PFT.png' %}"
-                  alt="..."
-                />
+                <img class="img-fluid" src="{% static 'Home/Projects/PFT.png' %}" alt="..." />
               </div>
             </div>
           </div>
         </a>
         <!-- Project Card 3-->
-        <a href="https://github.com/mahfujarr/ADBloop" class="text-decoration-none" target="_blank">
-          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="transition: transform 0.3s;">
-              <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                      <div class="p-5">
-                          <h2 class="fw-bolder">ADB Loop</h2>
-                          <p>I often change my phone's custom ROM and the problem is that I need to manually restrict many of the apps from running in the background. This python script makes it automatic.</p>
-                      </div>
-                      <img class="img-fluid" src="{% static 'Home/Projects/ADB.png' %}" alt="..." />
-                  </div>
+        <a href="https://github.com/mahfujarr/ADBloop" class="text-decoration-none custom-link" target="_blank">
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" style="transition: transform 0.3s;">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">ADB Loop</h2>
+                  <p>I often change my phone's custom ROM and the problem is that I need to manually restrict many of
+                    the apps from running in the background. This python script makes it automatic.</p>
+                </div>
+                <img class="img-fluid" src="{% static 'Home/Projects/ADB.png' %}" alt="..." />
               </div>
+            </div>
           </div>
-      </a>
+        </a>
         <!-- Project Card 2-->
         {% comment %}
         <div class="card overflow-hidden shadow rounded-4 border-0">
@@ -99,11 +84,7 @@
                   quo itaque! Ipsam!
                 </p>
               </div>
-              <img
-                class="img-fluid"
-                src="https://dummyimage.com/300x400/343a40/6c757d"
-                alt="..."
-              />
+              <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
             </div>
           </div>
         </div>
@@ -117,11 +98,7 @@
   <div class="container px-5 my-5">
     <div class="text-center">
       <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-      <a
-        class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
-        href="/contact"
-        >Contact me</a
-      >
+      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="/contact">Contact me</a>
     </div>
   </div>
 </section>
